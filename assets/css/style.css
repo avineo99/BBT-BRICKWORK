@@ -30,6 +30,10 @@ a {
   padding-right: 2%;
 }
 
+h1, .h1{
+  font-size: 90px;
+  letter-spacing: -0.02em;
+}
 /* 0 */
 .ls-60{
   letter-spacing: 0.06em;
@@ -79,6 +83,110 @@ a {
 header .navbar-brand img {
   max-width: 443px;
 }
-
+header .navbar-toggler:focus {
+  box-shadow: none;
+}
 
 /* header css end */
+/* banner section css start */
+.hero-banner{
+  height: 730px;
+}
+.hero-banner::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000066;
+
+}
+.hero-banner img{
+  object-fit: cover;
+}
+
+/* banner section css end */
+
+
+
+
+
+
+
+
+
+
+/* media css start */
+@media(max-width:1500px){
+  header .navbar-brand img {
+    max-width: 280px;
+  }
+  h1, .h1 {
+    font-size: 75px;
+}
+.hero-banner {
+  height: 700px;
+}
+}
+
+@media(max-width:1200px){
+  .fs-16 {
+    font-size: 14px;
+}
+.fs-18 {
+  font-size: 16px;
+}
+header .navbar-brand img {
+  max-width: 260px;
+}
+h1, .h1 {
+  font-size: 65px;
+}
+
+.hero-banner {
+  height: 650px;
+}
+}
+
+
+@media(max-width:992px){
+  header .navbar-nav{
+    border-top: 1px solid #c7c7c7;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  h1, .h1 {
+    font-size: 50px;
+}
+.hero-banner {
+  height: 550px;
+}
+}
+
+
+@media(max-width:767px){
+  h1, .h1 {
+    font-size: 38px;
+}
+.hero-banner {
+  height: 450px;
+}
+}
+
+
+@media(max-width:575px){
+  header .navbar-brand img {
+    max-width: 200px;
+}
+.nav-cta .cstm-cta.rounded-pill{
+  border-radius: 50px !important;
+}
+.banner-text span.d-block {
+  display: inline !important;
+}
+}
+
+
+
+
+/* media css end */
