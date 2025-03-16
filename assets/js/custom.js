@@ -6,12 +6,7 @@ $('.testimonial-wrap').slick({
   arrows: false,
 });
 
-$(".toggle").click(function () {
-    $("header").addClass("menuToggle");
-});
-$(".close, .close_overlay").click(function () {
-  $("header").removeClass("menuToggle");
-});
+
 
 AOS.init({
   duration: 1200,
@@ -19,16 +14,3 @@ AOS.init({
 });
 
 
-
-$('[data-fancybox="gallery"]').fancybox({
-  buttons: [
-    "slideShow",
-    "thumbs",
-    "zoom",
-    "fullScreen",
-    "share",
-    "close"
-  ],
-  loop: false,
-  protect: true
-});

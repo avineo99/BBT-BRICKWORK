@@ -35,8 +35,12 @@ h1, .h1{
   letter-spacing: -0.02em;
 }
 /* 0 */
+
 .ls-60{
   letter-spacing: 0.06em;
+}
+.ls-100{
+  letter-spacing: 0.1em;
 }
 
 
@@ -44,14 +48,27 @@ h1, .h1{
 .lh-1{
   line-height: 1;
 }
-
-
+.lh-2{
+  line-height: 2;
+}
+.lh-1-7{
+  line-height: 1.7;
+}
 /* 3 */
+.fs-13{
+  font-size: 13px;
+}
+.fs-15{
+  font-size: 15px;
+}
 .fs-16{
   font-size: 16px;
 }
 .fs-18{
   font-size: 18px;
+}
+.fs-24{
+  font-size: 24px;
 }
 
 /* 4 */
@@ -76,7 +93,9 @@ h1, .h1{
 }
 .bg-info{
   background-color: #078dc7 !important;
-
+}
+.bg-light{
+  background-color: #eee !important;
 }
 
 /* header css start */
@@ -92,7 +111,7 @@ header .navbar-toggler:focus {
 .hero-banner{
   height: 730px;
 }
-.hero-banner::before{
+.hero-banner::before, .get-touch::before{
   content: '';
   position: absolute;
   top: 0;
@@ -102,18 +121,151 @@ header .navbar-toggler:focus {
   background-color: #00000066;
 
 }
-.hero-banner img{
+.hero-banner img, .services-img img{
   object-fit: cover;
 }
 
 /* banner section css end */
+/* services section css start */
+.sevices-wrap{
+  background-image: url(../images/services-bg.svg);
+  background-position: bottom right;
+  background-size: 60% 75%;
+  background-repeat: no-repeat;
+}
 
 
+/* services section css end */
 
+/* gallery section css start */
+.gallery-img img{
+  object-fit: cover;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.gallery-img:hover img{
+  transform: scale(1.1);
+}
 
+/* gallery section css end */
+/* testimonial section css start */
+.testimonial-sec {
+  background-image: url(../images/testimonial-bg.svg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 25% 75%;
+}
+.testimonial-sec .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #078dc7;
+}
+.testimonial-sec .slick-dots li button:before {
+  font-size: 18px;
+  line-height: 1;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  border: 1px solid #078dc7;
+  color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* testimonial section css end */
 
+/* get in touch section css start */
+.get-touch{
+  background-image: url(../images/get-touch-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-group input{
+  height: 60px;
+}
+.form-group textarea{
+  height: 200px;
+}
+/* get in touch section css end */
+/* footer section css start */
+.footer-logo img{
+  max-width: 443px;
+}
+.copy-right.border-top{
+  border-color: #ffffff5e !important;
+}
+.site-footer {
+  background-image: url(../images/footer-bg.svg);
+  background-position: bottom right;
+  background-size: 25% 75%;
+  background-repeat: no-repeat;
+}
 
+/* footer section css end */
+.about-heading .border-bottom{
+  border-color: #d9d9d9 !important;
+}
+.abt-img {
+  height: 425px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.abt-img:hover{
+  transform: translateY(-10px);
+}
+.abt-img img, .sub-banner-wrap img{
+  object-fit: cover;
+  height: 100%;
+}
+/* .contact_from .form-group input{
+  border: 1[];
+} */
+.contact_from  .form-group input, .contact_from  .form-group textarea {
+  border-color: #C7C7C7 !important;
+}
+.contact-detail {
+  height: 81%;
+}
+.contact-detail ul li{
+  word-break: break-all;
+}
+.contact-detail ul li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 17px;
+  width: 17px;
+  background-image: url(../images/call.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contact-detail ul li:nth-child(1)::after {
+  background-image: url(../images/location.svg);
+}
+.contact-detail ul li:nth-child(2)::after {
+  background-image: url(../images/call.svg);
+}
+.contact-detail ul li:nth-child(3)::after {
+  background-image: url(../images/email.svg);
+}
+header .nav-link:hover, header .nav-link.active{
+color: #078dc7 !important;
+}
+.cstm-cta{
+  transition: all 0.3s linear;
+}
+.cstm-cta:hover{
+  background-color: #000 !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.footer-links ul li a:hover{
+  color: #000 !important;
+}
 
 
 
@@ -127,6 +279,9 @@ header .navbar-toggler:focus {
 }
 .hero-banner {
   height: 700px;
+}
+.abt-img {
+  height: 350px;
 }
 }
 
@@ -146,6 +301,27 @@ h1, .h1 {
 
 .hero-banner {
   height: 650px;
+}
+.fs-15 {
+  font-size: 14px;
+}
+.fs-13 {
+  font-size: 12px;
+}
+.form-group input {
+  height: 50px;
+}
+.form-group textarea {
+  height: 180px;
+}
+.fs-24 {
+  font-size: 22px;
+}
+.sevices-wrap {
+  background-size: 80% 45%;
+}
+.abt-img {
+  height: 300px;
 }
 }
 
@@ -171,6 +347,15 @@ h1, .h1 {
 .hero-banner {
   height: 450px;
 }
+.sub-banner-wrap {
+  height: 350px;
+}
+.site-footer {
+  background-size: 45% 75%;
+}
+.contact-detail {
+  height:auto;
+}
 }
 
 
@@ -183,6 +368,34 @@ h1, .h1 {
 }
 .banner-text span.d-block {
   display: inline !important;
+}
+.footer-logo img {
+  max-width: 250px;
+}
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.form-group input {
+  height: 45px;
+}
+.form-group textarea {
+  height: 160px;
+}
+.gallery-img {
+  height: 250px;
+}
+.testimonial-sec {
+  background-size: 55% 50%;
+}
+.sub-banner-wrap {
+  height: 250px;
+}
+.abt-img {
+  height: 220px;
+}
+.site-footer {
+  background-size: 75% 55%;
 }
 }
 
