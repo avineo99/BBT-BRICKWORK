@@ -326,11 +326,8 @@ h1, .h1 {
 }
 
 
-@media(max-width:992px){
-  /* header .navbar-nav{
-    border-top: 1px solid #c7c7c7;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  } */
+@media(max-width:991px){
+
   h1, .h1 {
     font-size: 50px;
 }
@@ -338,6 +335,7 @@ h1, .h1 {
   height: 550px;
 }
 div#navbarSupportedContent {
+  display: block !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -346,6 +344,21 @@ div#navbarSupportedContent {
   z-index: 99;
   background: #fff;
   padding: 50px;
+  transform: translateY(-100%);
+  transition: all 0.3s linear;
+}
+.menuToggle div#navbarSupportedContent{
+transform: translateY(0);
+}
+.toggle {
+  width: 25px;
+}
+.close {
+  position: absolute;
+  top: 30px;
+  width: 18px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 }
 
